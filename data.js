@@ -4,8 +4,8 @@ import { icons, images } from "./constants";
 export const initialCurrentLocation = {
     streetName: "Tarlac City",
     gps: {
-        latitude: 1.5496614931250685,
-        longitude: 110.36381866919922
+        latitude: 15.48017,
+        longitude: 120.59794
     }
 }
 
@@ -78,8 +78,8 @@ export const restaurantData = [
         photo: images.burger_restaurant_1,
         duration: "30 - 45 min",
         location: {
-            latitude: 1.5347282806345879,
-            longitude: 110.35632207358996,
+            latitude: 15.4798762387,
+            longitude: 120.595494416,
         },
         courier: {
             avatar: images.avatar_1,

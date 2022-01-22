@@ -15,6 +15,7 @@ import {
   initialCurrentLocation,
 } from "../../data";
 
+
 const Home = ({ navigation }) => {
   const [categories, setCategories] = useState(categoryData);
   const [selectedCategory, setSelectedCategory] = useState(null);
