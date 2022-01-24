@@ -15,7 +15,6 @@ import {
   initialCurrentLocation,
 } from "../../data";
 
-
 const Home = ({ navigation }) => {
   const [categories, setCategories] = useState(categoryData);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -24,22 +23,22 @@ const Home = ({ navigation }) => {
     initialCurrentLocation
   );
 
-  function onSelectedCategory(category) {
+  const onSelectedCategory = (category) => {
     let restaurantList = restaurantData.filter((a) =>
       a.categories.includes(category.id)
     );
 
     setRestaurants(restaurantList);
     setSelectedCategory(category);
-  }
+  };
 
-  function getCategoryNameById(id) {
+  const getCategoryNameById = (id) => {
     let category = categories.filter((a) => a.id == id);
 
     if (category.length > 0) return category[0].name;
 
     return "";
-  }
+  };
 
   function renderHeader() {
     return (

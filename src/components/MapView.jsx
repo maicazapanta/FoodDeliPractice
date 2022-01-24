@@ -11,7 +11,7 @@ const Map = () => {
 
         </MapView>
     </View>
-  );
+  );                                                                 
 };
 
 export default Map;
